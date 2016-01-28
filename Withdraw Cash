@@ -1,0 +1,39 @@
+* Customer 
+
+## Preconditions 
+
+## Postconditions
+
+## Main Success Scenario 
+1. Customer presents card
+2. System requests PIN 
+3. Customer enters PIN 
+4. System authenicates and presents menu
+5. Customer selects withdraw option 
+6. System amount to withdraw 
+7. Customer enters amount
+8. System checks balance, debits account and dispense cash and receipt
+
+## Extensions
+
+4a. Customer enter incorrect PIN: 
+
+1. System indicates incorrect entry and requests PIN 
+2. Resume at step 3 
+
+2-8a. System idle for predetermined timeout period: 
+
+1. System requests if customer needs more time
+2. Customer requests additional time
+   a. System idle for timeout period:
+      1. System ends session
+3. System resumes at previous screem
+
+8a. Customer holds insufficient funds for withdraw request
+
+1. System indicates insufficient funds and requests smaller amount
+2. Resume at step 8
+Work on : 
+   Insuffiecient funds 
+   Customer walks away without completing transaction 
+   Customer enters the incorrect PIN  (BONUS )  
